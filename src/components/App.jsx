@@ -33,7 +33,7 @@ export function App({ title }) {
       <Section>
         <GlobalStyle />
         <FeedbackOptions
-          options={['good', 'neutral', 'bad']}
+          options={Object.keys(feedback)}
           onLeaveFeedback={handleLeaveFeedback}
         />
       </Section>
